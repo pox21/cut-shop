@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0767f2b38f5e336582dbc3f8924ba8d4",
+    "content-hash": "fdad2bc705c016e9f91ea54b6d0fe2be",
     "packages": [
         {
             "name": "brick/math",
@@ -898,6 +898,90 @@
             "time": "2022-08-28T14:45:39+00:00"
         },
         {
+            "name": "intervention/image",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "04be355f8d6734c826045d02a1079ad658322dad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/04be355f8d6734c826045d02a1079ad658322dad",
+                "reference": "04be355f8d6734c826045d02a1079ad658322dad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1 || ^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^7.5.15"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@intervention.io",
+                    "homepage": "https://intervention.io/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "support": {
+                "issues": "https://github.com/Intervention/image/issues",
+                "source": "https://github.com/Intervention/image/tree/2.7.2"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/interventionio",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Intervention",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-05-21T17:30:32+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v9.35.1",
             "source": {
@@ -1149,6 +1233,78 @@
             "time": "2022-07-29T21:33:30+00:00"
         },
         {
+            "name": "laravel/scout",
+            "version": "v9.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/scout.git",
+                "reference": "83f0027f37dd950d50efe4ecfc84a6eb4a476e15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/scout/zipball/83f0027f37dd950d50efe4ecfc84a6eb4a476e15",
+                "reference": "83f0027f37dd950d50efe4ecfc84a6eb4a476e15",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/bus": "^8.0|^9.0",
+                "illuminate/contracts": "^8.0|^9.0",
+                "illuminate/database": "^8.0|^9.0",
+                "illuminate/http": "^8.0|^9.0",
+                "illuminate/pagination": "^8.0|^9.0",
+                "illuminate/queue": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "meilisearch/meilisearch-php": "^0.19",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^6.17|^7.0",
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "algolia/algoliasearch-client-php": "Required to use the Algolia engine (^3.2).",
+                "meilisearch/meilisearch-php": "Required to use the MeiliSearch engine (^0.23)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Scout\\ScoutServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Scout\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel Scout provides a driver based solution to searching your Eloquent models.",
+            "keywords": [
+                "algolia",
+                "laravel",
+                "search"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/scout/issues",
+                "source": "https://github.com/laravel/scout"
+            },
+            "time": "2022-10-04T14:18:55+00:00"
+        },
+        {
             "name": "laravel/serializable-closure",
             "version": "v1.2.2",
             "source": {
@@ -1207,6 +1363,75 @@
                 "source": "https://github.com/laravel/serializable-closure"
             },
             "time": "2022-09-08T13:45:54+00:00"
+        },
+        {
+            "name": "laravel/socialite",
+            "version": "v5.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/socialite.git",
+                "reference": "ce8b2f967eead5a6bae74449e207be6f8046edc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/ce8b2f967eead5a6bae74449e207be6f8046edc3",
+                "reference": "ce8b2f967eead5a6bae74449e207be6f8046edc3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/http": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "league/oauth1-client": "^1.10.1",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^8.0|^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Socialite\\SocialiteServiceProvider"
+                    ],
+                    "aliases": {
+                        "Socialite": "Laravel\\Socialite\\Facades\\Socialite"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Socialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "laravel",
+                "oauth"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/socialite/issues",
+                "source": "https://github.com/laravel/socialite"
+            },
+            "time": "2022-08-20T21:32:07+00:00"
         },
         {
             "name": "laravel/telescope",
@@ -1678,6 +1903,82 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "league/oauth1-client",
+            "version": "v1.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/oauth1-client.git",
+                "reference": "d6365b901b5c287dd41f143033315e2f777e1167"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/d6365b901b5c287dd41f143033315e2f777e1167",
+                "reference": "d6365b901b5c287dd41f143033315e2f777e1167",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "guzzlehttp/psr7": "^1.7|^2.0",
+                "php": ">=7.1||>=8.0"
+            },
+            "require-dev": {
+                "ext-simplexml": "*",
+                "friendsofphp/php-cs-fixer": "^2.17",
+                "mockery/mockery": "^1.3.3",
+                "phpstan/phpstan": "^0.12.42",
+                "phpunit/phpunit": "^7.5||9.5"
+            },
+            "suggest": {
+                "ext-simplexml": "For decoding XML-based responses."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev",
+                    "dev-develop": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\OAuth1\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Corlett",
+                    "email": "bencorlett@me.com",
+                    "homepage": "http://www.webcomm.com.au",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth 1.0 Client Library",
+            "keywords": [
+                "Authentication",
+                "SSO",
+                "authorization",
+                "bitbucket",
+                "identity",
+                "idp",
+                "oauth",
+                "oauth1",
+                "single sign on",
+                "trello",
+                "tumblr",
+                "twitter"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/oauth1-client/issues",
+                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.1"
+            },
+            "time": "2022-04-15T14:02:14+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5516,6 +5817,98 @@
             "time": "2022-07-11T09:26:42+00:00"
         },
         {
+            "name": "brianium/paratest",
+            "version": "v6.6.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paratestphp/paratest.git",
+                "reference": "31fd5d69b41725f383c9a083831eefcc7ecd9061"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paratestphp/paratest/zipball/31fd5d69b41725f383c9a083831eefcc7ecd9061",
+                "reference": "31fd5d69b41725f383c9a083831eefcc7ecd9061",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-pcre": "*",
+                "ext-reflection": "*",
+                "ext-simplexml": "*",
+                "jean85/pretty-package-versions": "^2.0.5",
+                "php": "^7.3 || ^8.0",
+                "phpunit/php-code-coverage": "^9.2.17",
+                "phpunit/php-file-iterator": "^3.0.6",
+                "phpunit/php-timer": "^5.0.3",
+                "phpunit/phpunit": "^9.5.24",
+                "sebastian/environment": "^5.1.4",
+                "symfony/console": "^5.4.12 || ^6.1.4",
+                "symfony/process": "^5.4.11 || ^6.1.3"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^10.0.0",
+                "ext-pcov": "*",
+                "ext-posix": "*",
+                "infection/infection": "^0.26.14",
+                "malukenho/mcbumpface": "^1.1.5",
+                "squizlabs/php_codesniffer": "^3.7.1",
+                "symfony/filesystem": "^5.4.12 || ^6.1.4",
+                "vimeo/psalm": "^4.27.0"
+            },
+            "bin": [
+                "bin/paratest",
+                "bin/paratest.bat",
+                "bin/paratest_for_phpstorm"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ParaTest\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Scaturro",
+                    "email": "scaturrob@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Filippo Tessarotto",
+                    "email": "zoeslam@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parallel testing for PHP",
+            "homepage": "https://github.com/paratestphp/paratest",
+            "keywords": [
+                "concurrent",
+                "parallel",
+                "phpunit",
+                "testing"
+            ],
+            "support": {
+                "issues": "https://github.com/paratestphp/paratest/issues",
+                "source": "https://github.com/paratestphp/paratest/tree/v6.6.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/Slamdunk",
+                    "type": "github"
+                },
+                {
+                    "url": "https://paypal.me/filippotessarotto",
+                    "type": "paypal"
+                }
+            ],
+            "time": "2022-10-28T12:22:26+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.4.1",
             "source": {
@@ -5773,6 +6166,65 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "jean85/pretty-package-versions",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jean85/pretty-package-versions.git",
+                "reference": "ae547e455a3d8babd07b96966b17d7fd21d9c6af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/ae547e455a3d8babd07b96966b17d7fd21d9c6af",
+                "reference": "ae547e455a3d8babd07b96966b17d7fd21d9c6af",
+                "shasum": ""
+            },
+            "require": {
+                "composer-runtime-api": "^2.0.0",
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.17",
+                "jean85/composer-provided-replaced-stub-package": "^1.0",
+                "phpstan/phpstan": "^0.12.66",
+                "phpunit/phpunit": "^7.5|^8.5|^9.4",
+                "vimeo/psalm": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jean85\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Lai",
+                    "email": "alessandro.lai85@gmail.com"
+                }
+            ],
+            "description": "A library to get pretty versions strings of installed dependencies",
+            "keywords": [
+                "composer",
+                "package",
+                "release",
+                "versions"
+            ],
+            "support": {
+                "issues": "https://github.com/Jean85/pretty-package-versions/issues",
+                "source": "https://github.com/Jean85/pretty-package-versions/tree/2.0.5"
+            },
+            "time": "2021-10-08T21:21:46+00:00"
         },
         {
             "name": "laravel/pint",
@@ -8025,6 +8477,80 @@
                 }
             ],
             "time": "2021-07-28T10:34:58+00:00"
+        },
+        {
+            "name": "worksome/request-factories",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/worksome/request-factories.git",
+                "reference": "59016791b5fb9cf77eb777bfaeef7b47d21ebcdc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/worksome/request-factories/zipball/59016791b5fb9cf77eb777bfaeef7b47d21ebcdc",
+                "reference": "59016791b5fb9cf77eb777bfaeef7b47d21ebcdc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0 || ^9.0",
+                "php": "^8.0 || ^8.1"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^5.10 || ^6.0",
+                "nunomaduro/larastan": "^1.0 || ^2.0",
+                "orchestra/testbench": "^6.22 || ^7.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "worksome/coding-style": "0.17.0",
+                "worksome/pest-plugin-silence": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Worksome\\RequestFactories\\RequestFactoriesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/PestAutoload.php"
+                ],
+                "psr-4": {
+                    "Worksome\\RequestFactories\\": "src",
+                    "Worksome\\RequestFactories\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "luke",
+                    "email": "lukeraymonddowning@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Test Form Requests in Laravel without all of the boilerplate.",
+            "homepage": "https://github.com/worksome/request-factories",
+            "keywords": [
+                "laravel",
+                "request-factories",
+                "worksome"
+            ],
+            "support": {
+                "issues": "https://github.com/worksome/request-factories/issues",
+                "source": "https://github.com/worksome/request-factories/tree/v2.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/worksome",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-15T11:48:41+00:00"
         }
     ],
     "aliases": [],
