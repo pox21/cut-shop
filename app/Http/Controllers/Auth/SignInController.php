@@ -4,7 +4,6 @@
 
     use App\Http\Controllers\Controller;
     use App\Http\Requests\SignInFormRequest;
-    use Domain\Auth\Models\User;
     use Illuminate\Contracts\Foundation\Application;
     use Illuminate\Contracts\View\View;
     use Illuminate\Http\RedirectResponse;
@@ -20,7 +19,6 @@
     {
         public function page(): Factory|View|Application|RedirectResponse
         {
-            $user = User::created();
             return view('auth.login');
         }
 

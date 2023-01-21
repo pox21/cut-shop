@@ -3,7 +3,6 @@
     namespace Domain\Product\Models;
 
     use App\Jobs\ProductJsonProperties;
-    use Domain\Catalog\Facades\Sorter;
     use Domain\Catalog\Models\Brand;
     use Domain\Catalog\Models\Category;
     use Illuminate\Contracts\Database\Query\Builder;
@@ -68,8 +67,8 @@
 
         public function scopeSorted(Builder $query)
         {
-            return Sorter::run($query);
-//            return sorter()->run($query);
+//            return Sorter::run($query);
+            return sorter()->run($query);
         }
 
         public function scopeHomePage(Builder $query)
